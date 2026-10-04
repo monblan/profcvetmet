@@ -1,0 +1,49 @@
+/* Индикатор процесса для страницы плагина */
+
+.kv-loader-wrap {
+    display: none;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.kv-spinner {
+    width: 24px;
+    height: 24px;
+    border: 3px solid #ccc;
+    border-top: 3px solid #2271b1;
+    border-radius: 50%;
+    animation: kv-spin 1s linear infinite;
+}
+
+@keyframes kv-spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.kv-loader-text {
+    font-size: 16px;
+    color: #333;
+}
+
+.notice-success {
+    font-weight: bold;
+}
+
+.kv-form-scv {
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 130%;
+}
+
+.descr-cvs {
+    margin-top: 20px;
+}
+
+input#run_btn {
+    margin-top: 20px;
+}
